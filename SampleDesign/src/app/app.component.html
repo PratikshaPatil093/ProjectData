@@ -1,0 +1,35 @@
+<mat-drawer-container>
+    <mat-drawer mode="side" [opened]="sideBarOpen">
+      <!-- <mat-drawer mode="side" opened="true"> -->
+      <app-sidenav></app-sidenav>
+    </mat-drawer>
+    <mat-drawer-content>
+      <app-header (toggleSidebarForMe)="sideBarToggler()"></app-header>
+      <router-outlet></router-outlet>
+      
+    </mat-drawer-content>
+    
+    <!-- Footer -->
+  </mat-drawer-container>
+  <!-- Footer -->
+  <!-- <footer style="position:absolute">
+
+    <div class="container-fluid text-center text-md-center" style="margin-top: 15px;">
+  
+    
+          <i class="fab fa-facebook-f" style="margin-left: 15px"></i>
+    
+       
+          <i class="fab fa-instagram" style="margin-left: 15px;"></i>
+        
+            <i class="fab fa-youtube" style="margin-left: 15px;"></i>
+        
+      
+    </div>
+  
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+      <a href="https://mdbootstrap.com/"> Climedo Health</a>
+    </div>
+  
+  </footer> -->
+  <!-- <app-footer></app-footer> -->
